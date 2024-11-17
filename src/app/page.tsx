@@ -35,9 +35,9 @@ export default function Home() {
     setConfig(prev => {
       const newConfig = { ...prev };
       const parts = path.split('.');
-      let current: any = newConfig;
+      let current: Record<string, unknown> = newConfig;
       for (let i = 0; i < parts.length - 1; i++) {
-        current = current[parts[i]];
+        current = current[parts[i]] as Record<string, unknown>;
       }
       current[parts[parts.length - 1]] = value;
       return newConfig;
@@ -98,7 +98,7 @@ export default function Home() {
       });
 
       // Log FormData contents for debugging
-      for (let pair of formData.entries()) {
+      for (const pair of formData.entries()) {
         console.log(pair[0], pair[1]);
       }
 
@@ -166,6 +166,9 @@ export default function Home() {
         </div>
         
         <form className="flex flex-col gap-4 w-full" onSubmit={handleSubmit}>
+          {uploadError && (
+            <div className="text-red-500 text-sm">{uploadError}</div>
+          )}
           <div className="flex flex-col gap-1">
             <input 
               className={inputClasses}
