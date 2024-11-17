@@ -153,7 +153,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 items-center sm:items-start max-w-4xl mx-auto">
         <div className="flex flex-col gap-2 text-2xl font-bold">MSDF ARFont Generator</div>
         <div className="flex-col gap-2">
-          This is a tool to generate MSDF Artery fonts from a font file. It uses the{" "}
+          A tool to generate MSDF Artery fonts from a font file. It uses the{" "}
           <a 
             href="https://github.com/Chlumsky/msdf-atlas-gen"
             className="text-blue-500 hover:text-blue-600 underline"
@@ -162,7 +162,7 @@ export default function Home() {
           >
             msdf-atlas-gen tool
           </a>
-          {" "}to generate the atlas and then the msdf-bmfont tool to generate the font files.
+          {" "}to generate the atlas and the font files. This tool is specifically designed to generate optimized font assets for the <a href="https://github.com/Siroko/kansei" className="text-blue-500 hover:text-blue-600 underline"target="_blank" rel="noopener noreferrer">Kansei WebGPU engine</a>. It converts standard font files into distance field based fonts that can be efficiently rendered on the GPU using WebGPU.
         </div>
         
         <form className="flex flex-col gap-4 w-full" onSubmit={handleSubmit}>
