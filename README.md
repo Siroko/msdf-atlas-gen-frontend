@@ -6,6 +6,12 @@ A web tool for converting TTF/OTF fonts into MSDF (Multi-channel Signed Distance
 
 This tool is specifically designed to generate optimized font assets for the [Kansei WebGPU engine](https://github.com/Siroko/kansei). It converts standard font files into distance field based fonts that can be efficiently rendered on the GPU using WebGPU/WebGL.
 
+## Architecture
+
+This project consists of two parts:
+- Frontend (this repository): Next.js web interface for font upload and configuration
+- [Backend](https://github.com/Siroko/msdf-atlas-gen-backend): Express.js server that handles MSDF atlas generation
+
 ## Usage
 
 1. Run the development server:
@@ -34,9 +40,11 @@ bun dev
 
 ## Technology
 
-Built with Next.js and integrates with the msdf-atlas-gen tool for font processing.
+- Frontend: Built with Next.js
+- Backend: Express.js server that integrates with the msdf-atlas-gen tool for font processing
 
 ## Learn More
 
 - [Kansei Documentation](https://github.com/Siroko/kansei)
 - [Next.js Documentation](https://nextjs.org/docs)
+- [MSDF Atlas Generator Backend](https://github.com/Siroko/msdf-atlas-gen-backend)
