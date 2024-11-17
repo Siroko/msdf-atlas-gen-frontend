@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image";
 import { FormEvent, useState } from "react";
 
 export default function Home() {
