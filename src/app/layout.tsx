@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   keywords: 'MSDF, font generator, WebGPU, Kansei, Artery, typography, font tools',
   openGraph: {
     title: 'MSDF ARFont Generator',
-    description: 'Generate optimized MSDF fonts for WebGPU rendering',
+    description: 'Generate optimized MSDF fonts for GPU rendering',
     type: 'website',
     images: [
       {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'MSDF ARFont Generator',
-    description: 'Generate optimized MSDF fonts for WebGPU rendering',
+    description: 'Generate optimized MSDF fonts for GPU rendering',
     images: ['/kansei-social-thumb.png'],
   },
   icons: {
