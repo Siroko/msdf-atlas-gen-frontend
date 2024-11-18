@@ -21,11 +21,24 @@ export const metadata: Metadata = {
     title: 'MSDF ARFont Generator',
     description: 'Generate optimized MSDF fonts for WebGPU rendering',
     type: 'website',
+    images: [
+      {
+        url: '/kansei-social-thumb.png',
+        width: 1200,
+        height: 630,
+        alt: 'MSDF ARFont Generator'
+      }
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'MSDF ARFont Generator',
     description: 'Generate optimized MSDF fonts for WebGPU rendering',
+    images: ['/kansei-social-thumb.png'],
+  },
+  icons: {
+    icon: '/kansei-social-thumb.png',
+    apple: '/kansei-social-thumb.png',
   }
 };
 
